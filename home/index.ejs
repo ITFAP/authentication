@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <style media="screen">
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: #ccc;
+      }
+      .container{
+        width: 100%;
+        height: 50px;
+        background-color: #5aaaa4;
+        position: relative;
+        top: 0;
+        display: flex;
+      }
+      .container ul{
+        width: 90%;
+        list-style: none;
+        display: flex;
+        position: absolute;
+        margin: 0;
+      }
+      .container ul a{
+        text-decoration: none;
+        color: #333;
+      }
+      .container ul a li{
+        width: 80px;
+        margin-left: 50%;
+        height:50px;
+        position: relative;
+        text-align: center;
+        line-height: 50px;
+      }
+      .container ul a li:hover{
+        background-color: white;
+        color: black;
+      }
+      .google{
+        width: 50%;
+        height: auto;
+        background-color: gray;
+        position: relative;
+        left: 25%;
+        margin-top: 5%;
+        text-align: center;
+      }
+
+      .google-log{
+        width: 100%;
+        height: 40px;
+        background-color: #dc3d3d;
+        position: absolute;
+        bottom: 0;
+        line-height: 40px;
+        font-size: 1.3em;
+        transition: all 400ms
+      }
+      .google-log:hover{
+        cursor: pointer;
+        background-color: #cb2c2c;
+
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+          <ul>
+            <a href=""><li>Home</li></a>
+            <a href="/auth/login"><li>Login</li></a>
+            <a href=""><li>Logout</li></a>
+          </ul>
+      </div>
+    </div>
+  </body>
+</html>
